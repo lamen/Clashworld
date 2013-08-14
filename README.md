@@ -1,4 +1,4 @@
 Clashworld
 ==========
 
-Clashworld is a strategy game
+Clashworld is a strategy game in php
