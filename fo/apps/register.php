@@ -1,0 +1,1 @@
+<?php/***	@desc Register Controller*	@author romain dumont*/require_once("../include/Controller.class.php");$oController = new Controller('register');$oController->displayAllView();?>

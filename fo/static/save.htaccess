@@ -1,0 +1,33 @@
+#gzip
+SetOutputFilter DEFLATE
+
+#cache browser
+ExpiresActive On
+ExpiresByType text/css "access plus 10 years"
+ExpiresByType text/js "access plus 10 years"
+ExpiresByType text/javascript "access plus 10 years"
+ExpiresByType application/x-javascript "access plus 10 years"
+ExpiresByType application/x-shockwave-flash "access plus 10 years"
+ExpiresByType image/png "access plus 10 years"
+ExpiresByType image/gif "access plus 10 years"
+ExpiresByType image/jpg "access plus 10 years"
+ExpiresByType image/x-icon "access plus 10 years"
+
+#rewrite rules
+RewriteEngine on
+
+#!hotlink
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www.)?clashsworld./.*$ [NC]
+RewriteRule .(gif|jpg)$ http://www.clashsworld.com/fo/static/interdit.gif [R,L]
+
+#domain redirection
+RewriteCond %{HTTP_HOST} !^www.*.com [NC]
+RewriteCond %{HTTP_HOST} !^www.*.fr [NC]
+RewriteRule ^(.*)$ http://www.clashsworld.com [R=301]
+
+
+RewriteRule ^login$ /fo/apps/login.php
+RewriteRule ^home$ /fo/apps/home.php
+RewriteRule ^callback$ /fo/include/Callbackcontroller.class.php
+RewriteRule ^city$ /fo/apps/city.php

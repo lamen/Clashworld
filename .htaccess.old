@@ -1,0 +1,24 @@
+#rewrite rules
+#RewriteEngine on
+
+#domain redirection
+#RewriteCond %{HTTP_HOST} !^dev.*.com [NC]
+#RewriteCond %{HTTP_HOST} !^dev.*.fr [NC]
+#RewriteRule ^(.*)$ http://dev.clashsworld.com [R=301]
+
+
+RewriteRule ^login$ /fo/apps/login.php
+#RewriteRule ^home$ /fo/apps/home.php
+#RewriteRule ^homegame$ /fo/apps/homegame.php
+#RewriteRule ^city$ /fo/apps/city.php
+#RewriteRule ^register$ /fo/apps/register.php
+#RewriteRule ^economy$ /fo/apps/economy.php
+#RewriteRule ^build$ /fo/apps/build.php
+#RewriteRule ^war$ /fo/apps/war.php
+#RewriteRule ^choosefaction$ /fo/apps/choosefaction.php
+
+#RewriteRule ^callback$ /fo/include/Callbackcontroller.class.php
+
+##404
+#ErrorDocument 404 /fo/apps/404.php
+#RewriteRule ^404$ /fo/apps/404.php
