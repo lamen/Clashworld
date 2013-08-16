@@ -1,0 +1,6 @@
+{
+"address":{"local":"","dev":"","prod":""},
+"login":{"local":"","dev":"","prod":""},
+"psw":{"local":"","dev":"","prod":""},
+"dbname":{"local":"","dev":"","prod":""}
+}
