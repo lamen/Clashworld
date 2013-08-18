@@ -33,7 +33,7 @@
 	}
 
 	public function callBackLoginCheck($sEmailAddress,$sPassword){
-
+var_dump('pouet');
 	  $aReturn = array();
 	  $slang = $this->_oSession->getFromSession('lang');
 	  

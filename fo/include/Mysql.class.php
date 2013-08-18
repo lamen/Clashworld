@@ -42,7 +42,7 @@
 			if($aParam==null) $sCall="call $sProcName();";
 			else $sCall="call $sProcName('" . implode("', '", $aParam) . "');";
 			$this->_oLog->addLog('Info',$sCall);
-			mysqli_report(MYSQLI_REPORT_ALL);
+			mysqli_report(MYSQLI_REPORT_STRICT);
 
 			try{
 				$db = new mysqli($this->_sServerHost, $this->_sUSerName, $this->_sPsw, $this->_sDataBaseName);

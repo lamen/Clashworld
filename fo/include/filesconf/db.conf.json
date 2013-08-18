@@ -1,6 +1,6 @@
 {
-"address":{"local":"","dev":"","prod":""},
-"login":{"local":"","dev":"","prod":""},
+"address":{"local":"localhost","dev":"","prod":""},
+"login":{"local":"romaindumont","dev":"","prod":""},
 "psw":{"local":"","dev":"","prod":""},
-"dbname":{"local":"","dev":"","prod":""}
+"dbname":{"local":"clashworld","dev":"","prod":""}
 }
