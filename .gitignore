@@ -3,4 +3,4 @@ weblogs/
 fo/smarty/templates_c/
 *.swp
 *.sql
-db.conf.json
+*db.conf.json
